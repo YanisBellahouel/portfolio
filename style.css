@@ -6,3 +6,43 @@ body {
 	margin: 0;
 	background-color: gray;
 }
+
+#carrousel {
+    display: flex;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    width: 800px;
+    position: relative;
+}
+
+#carrousel li {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+    opacity: 0;
+    display: none;
+}
+
+#carrousel li.active {
+    opacity: 1;
+    display: block;
+}
+
+#carrousel li img {
+	width: 100%;
+	height: 100%;
+}
+.carrousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+}
+
+.prev { left: 0; }
+.next { right: 0; }
