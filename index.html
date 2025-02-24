@@ -1,68 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./style.css">
-	<title>portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Portfolio - Yanis Bellahouel</title>
 </head>
 <body>
+    <aside id="sidebar">
+        <img src="./images/photo.jpg" alt="Photo de Yanis Bellahouel">
+        <h2>Yanis Bellahouel</h2>
+        <p>Développeur Web Full Stack</p>
 
-	<aside id="sidebar">
-		<img src="./images/photo.jpg" alt="Photo de Yanis Bellahouel">
-		<h2>Yanis Bellahouel</h2>
-		<p>Développeur Web</p>
+        <h3>Compétences Techniques</h3>
+        <div class="skills-container">
+            <div class="skill-item">
+                <span>GoLang</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <span>JavaScript</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <span>React</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <span>HTML/CSS</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 95%"></div>
+                </div>
+            </div>
+        </div>
 
-		<h3>Compétences</h3>
-		<ul>
-			<li>GoLang</li>
-			<li>JavaScript</li>
-			<li>React</li>
-		</ul>
+        <h3>Langues</h3>
+        <ul class="languages">
+            <li>Français - Natif</li>
+            <li>Anglais - Professionnel</li>
+        </ul>
 
-		<h3>Réseaux</h3>
-		<ul class="social-links">
-			<li><a href="https://github.com/ybellahoel">GitHub</a></li>
-			<li><a href="https://www.linkedin.com/in/yanis-bellahouel">LinkedIn</a></li>
-		</ul>
-	</aside>
+        <h3>Réseaux</h3>
+        <ul class="social-links">
+            <li>
+                <a href="https://github.com/ybellahoel" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/yanis-bellahouel" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </li>
+        </ul>
+    </aside>
 
+    <main>
+        <section id="about">
+            <h2><i class="fas fa-user"></i> À propos</h2>
+            <div class="about-content">
+                <p class="intro">Actuellement en formation de développement web chez Zone01, je suis à la recherche d'une alternance pour approfondir mes connaissances et contribuer à des projets concrets.</p>
 
-<main>
-	<section id="about">
-		<h2>À propos</h2>
-		<p>
-			Actuellement en formation de développement web chez Zone01.
-			J'ai des compétences en Go, JavaScript et React, et je cherche une alternance pour approfondir mes connaissances et contribuer à des projets concrets.
-		</p>
-	</section>
+                <div class="highlights">
+                    <div class="highlight-item">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Développement</h3>
+                        <p>Passionné par la création d'applications web modernes et performantes</p>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-puzzle-piece"></i>
+                        <h3>Problem Solving</h3>
+                        <p>Approche analytique et résolution créative des problèmes</p>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-users"></i>
+                        <h3>Travail d'équipe</h3>
+                        <p>Excellentes capacités de collaboration et de communication</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-	<section id="projects">
-		<h2>mes projets</h2>
+        <section id="experience">
+            <h2><i class="fas fa-briefcase"></i> Parcours</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="date">2023 - Présent</div>
+                    <div class="content">
+                        <h3>Formation Développeur Web</h3>
+                        <h4>Zone01</h4>
+                        <p>Formation intensive en développement web full stack. Réalisation de projets concrets en utilisant les technologies modernes.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="date">2022 - 2023</div>
+                    <div class="content">
+                        <h3>Bac +2 Développement</h3>
+                        <h4>Nom de l'école</h4>
+                        <p>Formation aux fondamentaux du développement web et de la programmation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-		<!-- carrousel de mes projets -->
-		<ul id="carrousel">
-			<li>
-				<h3>hackerNews</h3>
-				<a href="https://zone01normandie.org/git/ybellaho/clonernews_perso"><img src="./images/hackerNews.png" alt="capture d'écran du projet hackerNews"></a>
-				<p>répertorie toute les news, jobs et polls de l'api hackerNews</p>
-			</li>
+        <section id="projects">
+            <h2><i class="fas fa-code"></i> Mes projets</h2>
+            <button class="carrousel-btn prev">←</button>
+            <ul id="carrousel">
+                <li class="active">
+                    <h3>HackerNews</h3>
+                    <div class="project-content">
+                        <a href="https://zone01normandie.org/git/ybellaho/clonernews_perso" target="_blank">
+                            <img src="./images/hackerNews.png" alt="Projet HackerNews">
+                        </a>
+                        <div class="project-details">
+                            <p>Application web permettant de consulter et filtrer les actualités tech de l'API HackerNews.</p>
+                            <div class="tech-stack">
+                                <span>React</span>
+                                <span>JavaScript</span>
+                                <span>API REST</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <h3>Lem-in</h3>
+                    <div class="project-content">
+                        <a href="https://zone01normandie.org/git/ybellaho/lem-in-perso" target="_blank">
+                            <img src="./images/lem-in.png" alt="Projet Lem-in">
+                        </a>
+                        <div class="project-details">
+                            <p>Algorithme de recherche de chemin optimisé pour résoudre le problème de la fourmilière.</p>
+                            <div class="tech-stack">
+                                <span>GoLang</span>
+                                <span>Algorithmie</span>
+                                <span>Graphes</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <button class="carrousel-btn next">→</button>
+        </section>
 
-			<li>
-				<h3>Lem-in</h3>
-				<a href="https://zone01normandie.org/git/ybellaho/lem-in-perso"><img src="./images/lem-in.png" alt="capture d'écran du project lem-in"></a>
-				<p>projet d'algoritmie qui permet de touvé la sorti d'une fourmilière en trouvant le chemin optimale tout en évitant des bouchon car les fourmi avance tour par tour et ne peuvent par etre dans le meme couloir ou piece en meme temp</p>
-			</li>
+        <section id="contact">
+            <h2><i class="fas fa-envelope"></i> Contact</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:votre.email@example.com">votre.email@example.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+33600000000">+33 6 00 00 00 00</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Normandie, France</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-			<li>
-				<h3>projet 3</h3>
-				<a href=""><img src="" alt=""></a>
-				<p>vif explication du projet</p>
-			</li>
-		</ul>
-	</section>
-</main>
-
-<script src="./script.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
