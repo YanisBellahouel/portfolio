@@ -36,7 +36,7 @@ body {
 	box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
 }
 
-#sidebar img {
+#sidebar .profil-img img {
 	width: 160px;
 	height: 160px;
 	border-radius: 50%;
@@ -65,6 +65,13 @@ body {
 	color: var(--text-light);
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
+}
+
+#sidebar .skills-container .skill-item img{
+	width: 25px;
+	height: 25px;
+	position: relative;
+	top: 5px;
 }
 
 #sidebar ul {
@@ -129,7 +136,6 @@ main {
 	width: 90%;
 	height: 470px;
 	position: relative;
-	overflow: hidden;
 	border-radius: 10px;
 }
 
